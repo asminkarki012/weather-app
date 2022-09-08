@@ -1,5 +1,5 @@
 //importing access token from secrets.js file
-import {config} from './secrets.js'
+import { config } from './secrets.js';
 
 async function getRandomImage(searchItem) {
   const clientID = config.UNSPLASH_CLIENTID;
@@ -10,7 +10,10 @@ async function getRandomImage(searchItem) {
   return randomImageData.urls.full;
 }
 
-document.getElementById('search-but').addEventListener('click', getWeather);
+document.querySelector('.search button').addEventListener('click', () => {
+  getWeather();
+});
+
 document.querySelector('.search-bar').addEventListener('keyup', (event) => {
   if (event.key == 'Enter') {
     getWeather();
@@ -58,5 +61,3 @@ function displayWeather(data) {
   document.querySelector('.weather').classList.remove('loading');
 }
 getWeather('Kathmandu');
-
-
