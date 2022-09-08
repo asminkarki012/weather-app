@@ -10,7 +10,7 @@ async function getRandomImage(searchItem) {
   return randomImageData.urls.full;
 }
 
-document.querySelector('search button').addEventListener('click', () =>
+document.querySelector('.search button').addEventListener('click', () =>
 {getWeather();}
  );
  
