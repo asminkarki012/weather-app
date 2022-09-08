@@ -1,7 +1,7 @@
 # weather-app
 A simplistic UI Weather Application I made as a project for [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-weather-app).
 
-[Live Preview]()
+[Live Preview](https://asminkarki012.github.io/weather-app/)
 
 ---
 ## Requirement
