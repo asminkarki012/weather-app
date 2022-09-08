@@ -13,7 +13,7 @@ async function getRandomImage(searchItem) {
 document.querySelector('search button').addEventListener('click', () =>
 {getWeather();}
  );
-
+ 
 document.querySelector('.search-bar').addEventListener('keyup', (event) => {
   if (event.key == 'Enter') {
     getWeather();
