@@ -5,7 +5,7 @@ A simplistic UI Weather Application I made as a project for [The Odin Project](h
 
 ---
 ## Requirement
-- Card to display weather 
+- Card to display weather searched according to city name
 - App should display Temperature, description, humidity,wind speed for now which can be further be improved
    
 ## Things I learned
