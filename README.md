@@ -10,7 +10,7 @@ A simplistic UI Weather Application I made as a project for [The Odin Project](h
    
 ## Things I learned
 - Working with APIs.
-- Using Unsplash API to get random photo for searched city.
+- Using Unsplash API to get random photo
 - Using Openweather API to get weather of a searched city.
 - Handling Asynchronous requests
 
