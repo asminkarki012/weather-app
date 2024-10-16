@@ -36,11 +36,11 @@ jobs:
       - name: List All Files
         run: ls -la
          
-      - name: Replace secrets in config.js
+      - name: Replace secrets in placeholder in secrets.js
         run: |
           sed -e "s/REPLACE_UNSPLASH_CLIENTID/${{ secrets.UNSPLASH_CLIENTID }}/g" \
               -e "s/REPLACE_OPENWEATHER_API_KEY/${{ secrets.OPENWEATHER_API_KEY }}/g" \
-              secrets.js.template > secrets.js
+              secrets.js > secrets.js
               
       - name: List All Files After build
         run: ls -la
