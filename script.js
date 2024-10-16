@@ -3,6 +3,7 @@ import {config} from './secrets.js'
 
 async function getRandomImage(searchItem) {
   const clientID = config.UNSPLASH_CLIENTID;
+  console.log('clientId testing secrets',clientID);
   const endpoint = `https://api.unsplash.com/photos/random?client_id=${clientID}&query=${searchItem}`;
   const response = await fetch(endpoint);
   const randomImageData = await response.json();
@@ -29,6 +30,7 @@ async function getWeather(cityName) {
     city = input.value;
   }
   const apiKey = config.OPENWEATHER_API_KEY;
+  console.log("apikey testing",config,apiKey);
   const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   const response = await fetch(endpoint);
   const weatherData = await response.json();
