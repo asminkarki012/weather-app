@@ -40,10 +40,11 @@ jobs:
         run: |
           sed -e "s/REPLACE_UNSPLASH_CLIENTID/${{ secrets.UNSPLASH_CLIENTID }}/g" \
               -e "s/REPLACE_OPENWEATHER_API_KEY/${{ secrets.OPENWEATHER_API_KEY }}/g" \
-              secrets.js > secrets.js
+              secrets.js.template > secrets.js
               
       - name: List All Files After build
         run: ls -la
+        
       - name: Read secrets.js 
         run: cat secrets.js
   
