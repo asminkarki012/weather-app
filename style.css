@@ -19,49 +19,50 @@ body {
 }
 
 
-.search-bar{
+.search-bar {
     border: none;
     outline: none;
     padding: 5px;
     border-radius: 18px;
 
 }
-button{
+
+button {
     border: none;
     outline: none;
-    height:2em;
+    height: 2em;
     width: 5em;
     border-radius: 5%;
-    cursor:pointer;
+    cursor: pointer;
     text-decoration: solid;
 
 }
 
-button:hover{
+button:hover {
     background: grey;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
 }
 
-.description{
+.description {
     text-transform: capitalize;
-    margin-left:8px;
+    margin-left: 8px;
 }
 
-.weather.loading{
+.weather.loading {
     visibility: hidden;
     max-height: 20px;
     position: relative;
 }
 
-.weather.loading:after{
+.weather.loading:after {
     visibility: visible;
-    content:"loading...";
-    color:white;
-    position:absolute;
-    top:0;
-    left:20px;
+    content: "loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
